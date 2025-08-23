@@ -23,25 +23,24 @@ pip install -r requirements.txt
 
 # Run the classifier
 python main.py --input data/sample.csv
-
-⸻
+-------
 🧪 Model Training
 python train.py --config configs/train_config.yaml
 
 You can customize training parameters in the configs/train_config.yaml file.
-⸻
+------
 📊 Evaluation
 python evaluate.py --model checkpoints/best_model.pkl --test data/test.csv
 
 Generates a report with accuracy, precision, recall, F1-score, and confusion matrix.
-⸻
+------
 🛠️ Configuration
 All configurations are stored in the configs/ directory. You can define:
 • Model type (e.g., RandomForest, XGBoost, Transformer)
 • Hyperparameters
 • Input/output paths
 • Logging preferences
-⸻
+------
 📁 Project Structure
 ai-classifier/
 ├── data/
